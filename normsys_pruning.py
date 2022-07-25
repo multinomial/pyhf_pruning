@@ -18,7 +18,7 @@ def prune_model(workspace, eps = 0.001):
         
             for modifier_id, modifier in enumerate(modifiers):
                 data = modifier.get('data')
-                if (modifier.get('type') == 'normsys') and (np.abs(data['hi'] - data['lo']) <= eps):
+                if (modifier.get('type') == 'normsys') and (np.max(np.abs(1 - data['hi']), np.abs(1 - data['lo'])) <= eps):
                     ids_to_remove.append(modifier_id)
                 
             for modifier_id in ids_to_remove[::-1]:
