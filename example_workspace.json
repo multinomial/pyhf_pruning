@@ -1,0 +1,158 @@
+{
+    "channels": [
+        {
+            "name": "Signal_region",
+            "samples": [
+                {
+                    "data": [
+                        0.0,
+                        1.585369130539275,
+                        23.61642679992917,
+                        24.548922232659436
+                    ],
+                    "modifiers": [
+                        {
+                            "data": [
+                                0.0,
+                                0.19931165969755615,
+                                0.7741071346184436,
+                                0.7883050276148931
+                            ],
+                            "name": "staterror_Signal_region",
+                            "type": "staterror"
+                        },
+                        {
+                            "data": null,
+                            "name": "Signal_norm",
+                            "type": "normfactor"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.05,
+                                "lo": 0.95
+                            },
+                            "name": "Luminosity",
+                            "type": "normsys"
+                        }
+                    ],
+                    "name": "Signal"
+                },
+                {
+                    "data": [
+                        112.73896936192415,
+                        128.62169538923106,
+                        88.107008384283,
+                        55.246070720721384
+                    ],
+                    "modifiers": [
+                        {
+                            "data": [
+                                4.761366784144052,
+                                5.106450362569687,
+                                4.21104366965744,
+                                3.34933334869164
+                            ],
+                            "name": "staterror_Signal_region",
+                            "type": "staterror"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.05,
+                                "lo": 0.95
+                            },
+                            "name": "Luminosity",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": {
+                                "hi": 0.8000601197044678,
+                                "lo": 1.1999398802955321
+                            },
+                            "name": "Modeling",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": {
+                                "hi_data": [
+                                    67.3105222742511,
+                                    106.28983773556976,
+                                    113.43998173408835,
+                                    97.67340211225037
+                                ],
+                                "lo_data": [
+                                    158.1674164495972,
+                                    150.95355304289237,
+                                    62.77403503447766,
+                                    12.818739329192397
+                                ]
+                            },
+                            "name": "Modeling",
+                            "type": "histosys"
+                        },
+                        {
+                            "data": {
+                                "hi": 1.2752596424051097,
+                                "lo": 0.7000000000000004
+                            },
+                            "name": "WeightBasedModeling",
+                            "type": "normsys"
+                        },
+                        {
+                            "data": {
+                                "hi_data": [
+                                    76.95350059749936,
+                                    120.85560506370255,
+                                    106.02115338037393,
+                                    80.88348481458372
+                                ],
+                                "lo_data": [
+                                    112.73896936192422,
+                                    128.6216953892311,
+                                    88.10700838428298,
+                                    55.24607072072132
+                                ]
+                            },
+                            "name": "WeightBasedModeling",
+                            "type": "histosys"
+                        }
+                    ],
+                    "name": "Background"
+                }
+            ]
+        }
+    ],
+    "measurements": [
+        {
+            "config": {
+                "parameters": [
+                    {
+                        "bounds": [
+                            [
+                                0,
+                                10
+                            ]
+                        ],
+                        "inits": [
+                            1
+                        ],
+                        "name": "Signal_norm"
+                    }
+                ],
+                "poi": "Signal_norm"
+            },
+            "name": "minimal_example"
+        }
+    ],
+    "observations": [
+        {
+            "data": [
+                112.0,
+                112.0,
+                124.0,
+                66.0
+            ],
+            "name": "Signal_region"
+        }
+    ],
+    "version": "1.0.0"
+}
