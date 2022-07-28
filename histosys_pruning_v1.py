@@ -28,8 +28,7 @@ def prune_histosys(workspace, eps=0.01):
                                 np.abs(np.array(mod_data["hi_data"]) - data),
                                 np.abs(np.array(mod_data["lo_data"]) - data)
                                 )
-                            ),
-                             axis = 0
+                            )
                             )
                             / data
                         )
