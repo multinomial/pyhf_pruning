@@ -1,8 +1,8 @@
 # +
-#import numpy as np
+from copy import deepcopy
 
 def prune_model(workspace, eps=0.001):
-
+    workspace = deepcopy(workspace)
     channels = workspace.get("channels")
 
     for channel_id, channel in enumerate(channels):
