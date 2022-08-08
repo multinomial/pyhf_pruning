@@ -1,5 +1,0 @@
-.gitignore
-.ipynb_checkpoints
-Performance-analysis-notebook/.ipynb_checkpoints 
-Performance-analysis-notebook/pruning/__pycache__ 
-Performance-analysis-notebook/pruning/spec_*.json
