@@ -21,7 +21,6 @@ def prune_histosys(workspace, eps=0.01):
                     mod_data = modifier.get("data")
 
                     if (
-                        np.mean(
                             np.max(
                             np.vstack(
                                 (
@@ -31,7 +30,6 @@ def prune_histosys(workspace, eps=0.01):
                             )
                             )
                             / data
-                        )
                         <= eps
                        ):
                         ids_to_remove.append(modifier_id)
